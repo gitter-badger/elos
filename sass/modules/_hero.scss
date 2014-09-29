@@ -5,7 +5,7 @@
 **/
 .main{
 	@include adjust-font-size-to($alpha);
-	@include leader(30);
+	@include leader(20);
 	text-align: center;
 	color: green;
 	font-weight: bold;
