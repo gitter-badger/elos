@@ -1,0 +1,12 @@
+/**
+*
+* This file is organized in the following way
+*	hero
+**/
+.main{
+	@include adjust-font-size-to($alpha);
+	@include leader(30);
+	text-align: center;
+	color: green;
+	font-weight: bold;
+}

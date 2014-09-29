@@ -1,0 +1,58 @@
+// ------------------------------------------------------------
+// Global typography
+// ------------------------------------------------------------
+
+
+// ------------------------------------------------------------
+// Fonts
+// ------------------------------------------------------------
+
+.font-body 					{  font-family: 'Open Sans', sans-serif, sans-serif; }
+.font-var 					{  font-family: Georgia, serif; }
+
+
+// ------------------------------------------------------------
+// Core typography
+// ------------------------------------------------------------
+
+p, span, cite, ol, ul, pre, label, input, textarea 	{ @include adjust-font-size-to($para); }
+ul 													{ @include nobullet; } 						
+ol 													{ @include nobullet; }	
+li 													{ line-height: inherit; }					
+strong, b 											{ font-weight: 700; }
+em, i, q 											{ font-style: italic; }
+
+/*===================================
+=            Typography Positioning           =
+===================================*/
+.tac{
+	text-align: center;
+}
+
+.tac-dib{
+	text-align: center;
+	display: inline-block;
+}
+
+/*-----  End of Typography Positioning ------*/
+
+/*====================================
+=            Custom Fonts            =
+// Order of the includes matters,  it's: normal, bold, italic, bold+italic.
+====================================*/
+// @include fonts-face("lora", 'lora/lora-regular-webfont', normal, $asset-pipeline: true);
+// @include fonts-face("lora", 'lora/lora-bold-webfont', bold, $asset-pipeline: true);
+// @include fonts-face("lora", 'lora/lora-italic-webfont', italic, $asset-pipeline: true);
+// @include fonts-face("lora", 'lora/lora-bolditalic-webfont', bold italic, $asset-pipeline: true);
+// @include fonts-face("roboto_slab", 'roboto_slab/robotoslab-regular-webfont', normal, $asset-pipeline: true);
+// @include fonts-face("roboto_slab", 'roboto_slab/robotoslab-bold-webfont', bold, $asset-pipeline: true);
+// @import url(http://fonts.googleapis.com/css?family=Istok+Web:700,700italic);
+// @import url(http://fonts.googleapis.com/css?family=Lora:400,700,400italic);
+// @import url(http://fonts.googleapis.com/css?family=Arvo:400,700);
+// @import url(http://fonts.googleapis.com/css?family=Raleway:400,500);
+// @import url(http://fonts.googleapis.com/css?family=Francois+One);
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,600,700);
+@import url(http://fonts.googleapis.com/css?family=Poiret+One);
+
+/*-----  End of Custom Fonts  ------*/
+

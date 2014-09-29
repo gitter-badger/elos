@@ -1,0 +1,131 @@
+// ------------------------------------------------------------
+// Settings
+
+// :: Breakpoints
+// :: Colour
+// :: Typography
+// :: Borders
+// :: Spacing
+// ------------------------------------------------------------
+
+
+// ------------------------------------------------------------
+// :: Breakpoints
+// ------------------------------------------------------------
+
+// a-z viewports. Place where design should change, not always on device widths
+// Hat-tip to @hereinthehive for getting us thinking about naming suggestions
+
+$a-vp								: 300px;	// first viewport 
+$b-vp								: 420px;	// up one
+$c-vp								: 600px;	// up two
+$d-vp								: 900px;	// up three
+$e-vp								: 1100px;	// up four
+$f-vp								: 1300px;	// up five
+$ie-fixed-vp						: 980px;    // Viewport for IE fixed width
+
+$max-vp 							: $f-vp; 	// max viewport. Syntactically makes for a nicer option
+
+
+// At some point, you'll want to switch from a one column view to multi-column.
+// This variable is used in the grid to dictate when you make that switch
+$start-columns 						: $b-vp;
+
+
+// ------------------------------------------------------------
+
+
+// Define your main colour palette using whatever naming system you like
+
+$ron-burgundy 					:#e0006e;
+$al-green 							:#67b2b1;
+$beige-ruth 						:#f5f0e0;
+$agent-orange 					:#c64f24;
+$betty-blue 						:#a8d9f4;
+
+$blue-lead							:#444E57;
+$iron-man								:#CC1614;
+$blue-corp							:#3C7093;
+$cloud									:#f1f1f1;
+$superlight             :#fff;
+$light                  :#f6f6f6;
+$govt-desk              :#f0f0f0;
+$cocoa                  :#333;
+$boulder                :#777;
+
+$blue-suit							:#435A66;
+$blue-sad								:#88A6AF;
+$bedroom-wall 					:#F5F2EB;
+$bamboo                 :#D9CDB8;
+$cocoa                  :#424342;
+
+$sexy-red								:#D73117;
+$blue-levis             :#313745;
+$tshirt-camp            :#EB6728;
+$goiaba									:#EB6948;
+$jack-black							:#333;
+$macy-grey							:#777;	
+$green-presb						:#0A9C6D;
+// Assign colours to variable roles
+// Be descriptive without being specific. 
+// This allows for consistency project to project, and easy changing
+$hightlight-color 			: $bamboo;
+
+$body-color--lighter		: $light;
+$body-color--darker			: $bedroom-wall;
+$base-color							: $blue-suit;
+$base-color--lighter    : $blue-sad;
+$dark-stuff             : $cocoa;
+$heading-color					: $jack-black;
+$texting-color					: $macy-grey;
+
+$action									: $bamboo;
+$action-respond					: $goiaba;
+$accent-color           : $goiaba;
+$sucess									:$green-presb;
+
+
+// ------------------------------------------------------------
+// :: Typesizes/scale
+// ------------------------------------------------------------
+
+// Greek alphabet naming system. Obscure, yet hierarchical.
+// Allows us to avoid naming based on html object. 
+// Eg. A h1 can be smaller visually, than a h4.
+$alpha   	: 42px;
+$beta		: 32px;
+$gamma		: 28px;
+$delta		: 26px;
+$epsilon	: 24px;
+$zeta		: 20px;
+$eta		: 18px;
+$theta		: 15px;
+$iota 		: 14px;
+$kappa 		: 12px;
+
+
+$para		: $theta; 	// Paragraph size
+$quote		: $beta;	// Quote size
+
+
+
+// ------------------------------------------------------------
+// :: Border widths
+// ------------------------------------------------------------
+
+$default-border-width 				: 1px; 
+
+
+// ------------------------------------------------------------
+// :: Grid variables
+// ------------------------------------------------------------
+
+$internal-spacing-percent 			: 3%;		// Used by grid system
+$internal-spacing					: 40px; 	// Space internally with fixed measure
+
+
+
+// ------------------------------------------------------------	
+// Add functional stuff 
+// ------------------------------------------------------------	
+@import "functions/functions"
