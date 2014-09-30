@@ -18,3 +18,4 @@
 #ignore application configuration
 /config/application.yml
 /config/.rbenv-vars
+.env

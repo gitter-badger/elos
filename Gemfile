@@ -55,3 +55,6 @@ gem 'capistrano-rbenv', "~> 2.0"
 
 # Use the Unicorn app server
 gem 'unicorn'
+
+gem 'dotenv'
+gem 'dotenv-deployment', require: 'dotenv/deployment'
