@@ -5,8 +5,9 @@
 **/
 .main{
 	@include adjust-font-size-to($alpha);
-	@include leader(20);
+	// border-bottom: 1px solid #7BFF68;
+	@include leader(15);
 	text-align: center;
-	color: green;
+	color: #7BFF68;
 	font-weight: bold;
 }
