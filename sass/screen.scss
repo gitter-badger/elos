@@ -25,15 +25,15 @@ html {
 body {
 	@extend .font-body;
 	background: $body-color--lighter;
-	color: $base-color;
+	color: $dark-stuff;
 	overflow-x: hidden;
 }
 
 a {
-	color: $hightlight-color ;
+	color: $sucess ;
 	text-decoration: none;
 	@include link-active-styles { 	// Mixin for interactions (hover,focus,active)
-		color: $action-respond;
+		color: $bamboo;
 	}
 	&:not(>img) {
 		@include force-wrap;

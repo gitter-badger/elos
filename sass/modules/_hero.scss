@@ -6,8 +6,42 @@
 .main{
 	@include adjust-font-size-to($alpha);
 	// border-bottom: 1px solid #7BFF68;
-	@include leader(15);
+	@include leader(1);
 	text-align: center;
 	color: #19B065;
 	font-weight: bold;
+}
+.image-center{
+	text-align:center;
+  margin-top:auto;
+  margin-bottom:auto;
+}
+.contacts{
+	text-align: center;
+	.contacts__title{
+		@include padding-leader(5);
+		@include padding-trailer(5);
+		@include adjust-font-size-to($eta);
+	}
+	.contacts__content{
+		margin-left: auto;
+		margin-right: auto;
+		td{
+			display: block;
+			@include respond-to($d-vp){
+				display: inline-block;
+				padding-right: 3em;
+				@include padding-leader(6);
+			}
+			padding-right: 0.2em;
+			@include padding-leader(1);
+			@include adjust-font-size-to($iota);
+		}
+}
+}
+.contacts__content--email{
+	@include respond-to-max($c-vp){
+		@include padding-trailer(4);
+	}	
+	
 }

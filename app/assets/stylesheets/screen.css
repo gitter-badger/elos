@@ -149,10 +149,47 @@ textarea {
 .main {
   font-size: 2.625em;
   line-height: 1.152381em;
-  margin-top: 4.125em;
+  margin-top: 0.275em;
   text-align: center;
   color: #19B065;
   font-weight: bold; }
+
+.image-center {
+  text-align: center;
+  margin-top: auto;
+  margin-bottom: auto; }
+
+.contacts {
+  text-align: center; }
+  .contacts .contacts__title {
+    padding-top: 1.375em;
+    padding-bottom: 1.375em;
+    font-size: 1.125em;
+    line-height: 1.2222222em; }
+  .contacts .contacts__content {
+    margin-left: auto;
+    margin-right: auto; }
+    .contacts .contacts__content td {
+      display: block;
+      padding-right: 0.2em;
+      padding-top: 0.275em;
+      font-size: 0.875em;
+      line-height: 1.5714286em; }
+      .lt-ie9 .contacts .contacts__content td {
+        display: inline-block;
+        padding-right: 3em;
+        padding-top: 1.65em; }
+      @media screen and (min-width: 900px) {
+        .contacts .contacts__content td {
+          display: inline-block;
+          padding-right: 3em;
+          padding-top: 1.65em; } }
+
+.lt-ie9 .contacts__content--email {
+  padding-bottom: 1.1em; }
+@media screen and (max-width: 599px) {
+  .contacts__content--email {
+    padding-bottom: 1.1em; } }
 
 /* ::Base styles */
 /* ------------------------------------------------------------ */
@@ -164,14 +201,14 @@ html {
 
 body {
   background: #f6f6f6;
-  color: #435a66;
+  color: #424342;
   overflow-x: hidden; }
 
 a {
-  color: #d9cdb8;
+  color: #0a9c6d;
   text-decoration: none; }
   a:hover, a:focus, a:active {
-    color: #eb6948; }
+    color: #d9cdb8; }
   a:not(> img) {
     white-space: pre;
     white-space: pre-wrap;
