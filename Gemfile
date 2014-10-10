@@ -58,3 +58,9 @@ gem 'unicorn'
 
 gem 'dotenv'
 gem 'dotenv-deployment', require: 'dotenv/deployment'
+
+# Icon related
+gem "font-awesome-rails"
+
+#Heroku stuff
+gem "rails_12factor"

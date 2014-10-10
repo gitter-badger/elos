@@ -62,6 +62,8 @@ GEM
     dotenv-deployment (0.0.2)
     erubis (2.7.0)
     execjs (2.2.1)
+    font-awesome-rails (4.2.0.0)
+      railties (>= 3.2, < 5.0)
     fssm (0.2.10)
     hike (1.2.3)
     i18n (0.6.11)
@@ -97,6 +99,11 @@ GEM
       bundler (>= 1.3.0, < 2.0)
       railties (= 4.1.5)
       sprockets-rails (~> 2.0)
+    rails_12factor (0.0.2)
+      rails_serve_static_assets
+      rails_stdout_logging
+    rails_serve_static_assets (0.0.2)
+    rails_stdout_logging (0.0.3)
     railties (4.1.5)
       actionpack (= 4.1.5)
       activesupport (= 4.1.5)
@@ -161,10 +168,12 @@ DEPENDENCIES
   compass-rails
   dotenv
   dotenv-deployment
+  font-awesome-rails
   jbuilder (~> 2.0)
   jquery-rails
   pg
   rails (= 4.1.5)
+  rails_12factor
   sass-globbing
   sass-rails (~> 4.0.3)
   sdoc (~> 0.4.0)
